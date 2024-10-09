@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#github token
+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
