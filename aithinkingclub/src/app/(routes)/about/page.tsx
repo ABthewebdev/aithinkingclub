@@ -8,7 +8,7 @@ export default function Page() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">About Our Club</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-white">
-                  We're a community of students passionate about artificial intelligence and its impact on society.
+                  We&apos;re a community of students passionate about artificial intelligence and its impact on society.
                   Our club focuses on fostering critical thinking, ethical considerations, and practical applications of AI.
                 </p>
               </div>

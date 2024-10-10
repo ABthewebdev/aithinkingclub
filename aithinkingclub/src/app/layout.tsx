@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-slate-950">
         <Header />
-        <TracingBeam>
+        <TracingBeam className="px-6">
           {children}
         </TracingBeam>
         <Footer />
