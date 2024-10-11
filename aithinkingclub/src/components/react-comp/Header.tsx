@@ -15,8 +15,8 @@ export default function Header() {
           <Link className="text-sm font-bold hover:underline underline-offset-4 text-white" href="/events">
             Events
           </Link>
-          <Link className="text-sm font-bold hover:underline underline-offset-4 text-white" href="/jobs">
-            Jobs
+          <Link className="text-sm font-bold hover:underline underline-offset-4 text-white" href="/internships">
+            Internships
           </Link>
         </nav>
       </header>

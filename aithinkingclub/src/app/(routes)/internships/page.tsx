@@ -6,7 +6,7 @@ import { CalendarIcon, MapPinIcon } from "lucide-react"
 const internships = [
   {
     id: 1,
-    title: "Software Engineering Intern",
+    title: "Full Stack Developer",
     company: "TechCorp",
     location: "San Francisco, CA",
     duration: "3 months",
@@ -15,7 +15,7 @@ const internships = [
   },
   {
     id: 2,
-    title: "Data Science Intern",
+    title: "Data Scientist",
     company: "DataWiz",
     location: "New York, NY",
     duration: "6 months",
@@ -24,16 +24,16 @@ const internships = [
   },
   {
     id: 3,
-    title: "UX Design Intern",
-    company: "DesignMasters",
+    title: "Machine Learning Engineer",
+    company: "unique.ai",
     location: "Seattle, WA",
     duration: "4 months",
-    description: "Create user-centered designs for mobile and web applications.",
-    tags: ["UI/UX", "Figma", "User Research"]
+    description: "Create algorithms to trade stocks and print more money than the Federal Reserve.",
+    tags: ["Python", "Pytorch", "Math"]
   },
   {
     id: 4,
-    title: "Cloud Engineering Intern",
+    title: "Cloud Engineer",
     company: "CloudNine",
     location: "Austin, TX",
     duration: "3 months",
@@ -42,7 +42,7 @@ const internships = [
   },
   {
     id: 5,
-    title: "Mobile App Development Intern",
+    title: "Mobile App Developer",
     company: "AppGenius",
     location: "Boston, MA",
     duration: "5 months",
@@ -51,7 +51,7 @@ const internships = [
   },
   {
     id: 6,
-    title: "Cybersecurity Intern",
+    title: "Cybersecurity Specialist",
     company: "SecureNet",
     location: "Washington, D.C.",
     duration: "4 months",
@@ -62,24 +62,22 @@ const internships = [
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Tech Internships</h1>
-        </div>
-      </header>
+    <div className="min-h-screen bg-slate-950">
+      <div className="text-center font-semibold text-2xl">
+        <h1 className="text-white">Internships we offer</h1>
+      </div>
       <main>
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <div className="px-4 py-6 sm:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {internships.map((internship) => (
-                <Card key={internship.id} className="flex flex-col">
+                <Card key={internship.id} className="flex flex-col bg-slate-950">
                   <CardHeader>
-                    <CardTitle>{internship.title}</CardTitle>
-                    <CardDescription>{internship.company}</CardDescription>
+                    <CardTitle className="text-white">{internship.title}</CardTitle>
+                    <CardDescription className="text-white">{internship.company}</CardDescription>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <p className="text-sm text-gray-500 mb-4">{internship.description}</p>
+                    <p className="text-sm text-gray-300 mb-4">{internship.description}</p>
                     <div className="flex items-center mb-2">
                       <MapPinIcon className="h-4 w-4 mr-2 text-gray-400" />
                       <span className="text-sm text-gray-500">{internship.location}</span>
@@ -103,11 +101,6 @@ export default function Page() {
           </div>
         </div>
       </main>
-      <footer className="bg-white shadow mt-8">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm text-gray-500">© 2024 Tech Internships. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   )
 }
