@@ -1,7 +1,13 @@
+'use client'
+
 import { Brain } from "lucide-react"
 import Link from "next/link"
 
 export default function Header() {
+  const handleClick = (event: any) => {
+    event.preventDefault();  // Prevent the default link behavior
+    window.open("https://aitalk.hashnode.dev/?source=top_nav_blog_home", "_blank");  // Open in a new tab
+  };
     return (
         <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="/">
@@ -17,6 +23,9 @@ export default function Header() {
           </Link>
           <Link className="text-sm font-bold hover:underline underline-offset-4 text-white" href="/internships">
             Internships
+          </Link>
+          <Link className="text-sm font-bold hover:underline underline-offset-4 text-white" onClick={handleClick} href="/">
+            Blog
           </Link>
         </nav>
       </header>
