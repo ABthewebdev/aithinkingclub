@@ -4,7 +4,7 @@ import { Brain } from "lucide-react"
 import Link from "next/link"
 
 export default function Header() {
-  const handleClick = (event: any) => {
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();  // Prevent the default link behavior
     window.open("https://aitalk.hashnode.dev/?source=top_nav_blog_home", "_blank");  // Open in a new tab
   };
